@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>xCube</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<section id="func-tab">
+		<div id="logo"><span id="logoText">xCube</span></div> <!-- logo -->
+		<div id="mode">
+			<a id="team-mode" href="./index.html">CO-OP Mode</a>
+			<a id="single-mode" href="./single.html"> Single Mode </a>
+			<a href="./sandbox.html">Sandbox </a>
+			<a class="checked">Custom Mode</a>
+		</div>
+		<!--mode selection-->
+		<div id="level">Level</div>
+		<!--level selection-->
+	</section>
+	<!--right side bar-->
+
+	<section id="game-area"> </section>
+	<!--game view-->
+
+	<section id="guide-tab">
+		<div id="hint">
+			<p class="bold">hints</p>
+			<p id="hint-text"></p>
+			<!--hints-->
+		</div>
+		<div id="control">
+			<p class="bold">controls</p>
+			<p>Zoom out: <span>1</span></p>
+			<p>Zoom in: <span>2</span></p>
+			<div id="player1-control">
+				<p class="bold">Player 1</p>
+				<p>Jump: <span>W</span></p>
+				<p>Left: <span>A</span></p>
+				<p>Right: <span>D</span></p>
+			</div>
+
+			<div id="player2-control">
+				<p class="bold">Player 2</p>
+				<p>Jump: <span>&#8593</span></p>
+				<p>Left: <span>&#8592</span></p>
+				<p>Right: <span>&#8594</span></p>
+			</div>
+		</div>
+		<!--controls-->
+	</section>
+	<!--left sidebar-->
+</body>
+
+<script src="./scripts/drawing.js"></script>
+<script src="./scripts/main.js"></script>
+<script src="./scripts/custom.js"></script>
+
+</html>

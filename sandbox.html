@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>xCube</title>
+	<link href="./css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<section id="func-tab">
+		<div id="logo"><span id="logoText">xCube</span></div> <!-- logo -->
+		<div id="mode">
+			<a id="team-mode" href="./index.html">CO-OP Mode</a>
+			<a id="single-mode" href="./single.html"> Single Mode </a>
+			<a class="checked"> Sandbox </a>
+			<a href="./custom.html">Custom Mode</a>
+		</div>
+		<!--mode selection-->
+		<div id="level">Level</div>
+		<!--level selection-->
+	</section>
+	<!--right side bar-->
+
+	<section id="workbench">
+		<div id="table-area-wrapper">
+			<div id="table-area"></div>
+		</div>
+		<div id="table-func">
+
+			<div id="map-name">
+			</div>
+			<div>
+				<button id="save-btn" class="sb-btn">deploy</button>
+				<button id="clear-btn" class="sb-btn">clear</button>
+			</div>
+
+			<div id="row-col-btn">
+				<div id="zoom-change" class="btn-row-col">
+					<span>zoom</span>
+					<div>
+						<button id="zoom-minus">-</button>
+						<button id="zoom-plus">+</button>
+					</div>
+				</div>
+				<div id="row-change" class="btn-row-col">
+					<span>row</span>
+					<div>
+						<button id="row-minus">-</button>
+						<button id="row-plus">+</button>
+					</div>
+				</div>
+				<div id="col-change" class="btn-row-col">
+					<span>col</span>
+					<div>
+						<button id="col-minus">-</button>
+						<button id="col-plus">+</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--game view-->
+
+	<section id="sb-rightBar">
+		<div id="sb-control">
+			<h4 class="bold">controls</h4>
+			<p id="ctrl-btn"> <span>Ctrl</span> : Hold to Fill</p>
+
+			<h4 class="bold">elements</h4>
+			<div id="sandbox-control-btn">
+				<p id="1" onclick="changeTypeClick(this)"><span>1</span> : Empty</p>
+				<p id="2" onclick="changeTypeClick(this)"><span>2</span> : Wall</p>
+				<p id="3" onclick="changeTypeClick(this)"><span>3</span> : Lava</p>
+				<p id="4" onclick="changeTypeClick(this)"><span>4</span> : Coin</p>
+				<p id="5" onclick="changeTypeClick(this)"><span>5</span> : Horizontal Lava</p>
+				<p id="6" onclick="changeTypeClick(this)"><span>6</span> : Vertical Lava</p>
+				<p id="7" onclick="changeTypeClick(this)"><span>7</span> : Dripping Lava</p>
+				<p id="8" onclick="changeTypeClick(this)"><span>8</span> : Player 1</p>
+				<p id="9" onclick="changeTypeClick(this)"><span>9</span> : Player 2</p>
+			</div>
+		</div>
+	</section>
+	<!--controls-->
+</body>
+<script src="./scripts/levels.js"></script>
+<script src="./scripts/drawing.js"></script>
+<script src="./scripts/main.js"></script>
+<script src="./scripts/sandbox.js"></script>
+
+</html>
